@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEREBRASYSTEM IT Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Neon glow text */
+    .neon-text {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    /* Page background */
+    body {
+      background: radial-gradient(circle at top, #001, #000);
+    }
+    /* Link hover glow */
+    .glow:hover {
+      text-shadow: 0 0 8px #f0f, 0 0 16px #f0f;
+      transition: text-shadow 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-white">
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center p-6">
+    <div class="text-2xl font-bold neon-text">CEREBRASYSTEM</div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="glow">Home</a></li>
+      <li><a href="#services" class="glow">Services</a></li>
+      <li><a href="#about" class="glow">About</a></li>
+      <li><a href="#contact" class="glow">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-6xl font-extrabold neon-text mb-4">Unlock the Future</h1>
+    <p class="text-xl glow mb-8">Next-gen IT solutions for a digital world.</p>
+    <a href="#contact" class="px-8 py-3 border-2 neon-text glow rounded-lg">Get in Touch</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-6 bg-black/50">
+    <h2 class="text-4xl neon-text text-center mb-12">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-900 rounded-2xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl neon-text mb-2">Cloud Integration</h3>
+        <p class="text-gray-300">Seamless migration to the cloud with zero downtime and maximum security.</p>
+      </div>
+      <div class="p-6 bg-gray-900 rounded-2xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl neon-text mb-2">AI & Machine Learning</h3>
+        <p class="text-gray-300">Custom AI solutions to accelerate your decision-making and automation.</p>
+      </div>
+      <div class="p-6 bg-gray-900 rounded-2xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl neon-text mb-2">Cybersecurity</h3>
+        <p class="text-gray-300">Next-gen defense systems to protect your digital assets 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6">
+    <h2 class="text-4xl neon-text text-center mb-8">About Us</h2>
+    <p class="max-w-3xl mx-auto text-gray-300 text-center">At CyberWave, we merge cutting-edge technology with visionary strategy to bring your business into the neon-lit future.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-black/50">
+    <h2 class="text-4xl neon-text text-center mb-8">Contact Us</h2>
+    <form class="max-w-xl mx-auto grid grid-cols-1 gap-6">
+      <input type="text" placeholder="Name" class="p-4 bg-gray-800 rounded-lg text-white" />
+      <input type="email" placeholder="Email" class="p-4 bg-gray-800 rounded-lg text-white" />
+      <textarea rows="5" placeholder="Your Message" class="p-4 bg-gray-800 rounded-lg text-white"></textarea>
+      <button type="submit" class="px-6 py-3 neon-text glow border-2 rounded-lg">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500">© 2025 CEREBRASYSTEM IT Solutions. All rights reserved.</footer>
+
+  <!-- Interactive Cursor Trail -->
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const dot = document.createElement('div');
+      dot.className = 'w-2 h-2 bg-cyan-500 rounded-full absolute opacity-75';
+      document.body.appendChild(dot);
+      dot.style.left = e.pageX + 'px';
+      dot.style.top = e.pageY + 'px';
+      setTimeout(() => dot.remove(), 300);
+    });
+  </script>
+</body>
+</html>
