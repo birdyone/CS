@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32" fill="none" stroke="url(#gradIBM)" stroke-width="1.5">
+<defs>
+  <linearGradient id="gradIBM" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0a84ff;stop-opacity:1" />
+    <stop offset="50%" style="stop-color:#0ef0a0;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+  </linearGradient>
+</defs>
+<path d="M6 10h20v4H6zM6 18h20v4H6z"/></svg>
